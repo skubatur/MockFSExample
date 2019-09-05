@@ -57,14 +57,7 @@ var processDir = function (path, entry) {
 };
 
 
+processDir("/", files);
+setTimeout(() => output(files), 1000);
 
-
-function final(param1, param2, callback2){
-	processDir(param1, param2);
-    setTimeout(() => callback2(), 1000);
-}
-
-final("/", files, function (){
-    output(files);
-});
 
